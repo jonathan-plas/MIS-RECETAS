@@ -10,4 +10,5 @@
     <string name="claro_menu">Claro</string>
     <string name="salir_menu">Salir</string>
     <string name="principal_titulo">Lista de Recetas</string>
+    <string name="btn_detalle">Detalle</string>
 </resources>
