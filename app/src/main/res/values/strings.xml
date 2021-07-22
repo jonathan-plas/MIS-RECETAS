@@ -4,4 +4,10 @@
     <string name="ingresar">Iniciar Sesion</string>
     <string name="usuario">Usuario</string>
     <string name="contraseña">Contraseña</string>
+    <string name="tema_menu">Tema</string>
+    <string name="integrantes_menu">Integrantes</string>
+    <string name="oscuro_menu">Oscuro</string>
+    <string name="claro_menu">Claro</string>
+    <string name="salir_menu">Salir</string>
+    <string name="principal_titulo">Lista de Recetas</string>
 </resources>

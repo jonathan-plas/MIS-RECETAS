@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/tema_menu"
+
+        android:icon="@drawable/tema"
+        android:iconTint="@color/white">
+
+
+        <menu >
+            <item
+                android:id="@+id/oscuro"
+                android:icon="@drawable/oscuro"
+                android:iconTint="@color/white"
+                android:title="@string/oscuro_menu" />
+
+
+            <item
+                android:id="@+id/claro"
+                android:icon="@drawable/claro"
+                android:iconTint="@color/white"
+                android:title="@string/claro_menu" />
+        </menu>
+
+
+    </item>
+    <item
+        android:id="@+id/integrantes"
+        android:icon="@drawable/integrantes"
+        android:iconTint="@color/iconos"
+        android:title="@string/integrantes_menu" />
+    <item
+        android:id="@+id/salir"
+        android:icon="@drawable/salir"
+        android:iconTint="@color/iconos"
+        android:title="@string/salir_menu" />
+</menu>
