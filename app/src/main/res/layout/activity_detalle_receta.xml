@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Ingredientes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/iconos"
+    android:backgroundTintMode="screen"
+    tools:context=".Detalle_receta">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="393dp"
+                android:layout_height="252dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="5dp"
+                app:srcCompat="@drawable/pizza" />
+
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Arroz con Leche"
+                android:textAlignment="center"
+                android:textColor="@color/titulos"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="409dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="1dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+            <TextView
+                android:id="@+id/Ingrediente"
+                android:layout_width="135dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="299dp"
+                android:text="Ingredientes"
+                android:textColor="@color/subtitulos"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+            <EditText
+                android:id="@+id/Ingrediente_receta"
+                android:layout_width="351dp"
+                android:layout_height="248dp"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="♦1 Taza de Arroz
+                                        ♦1Lata  de leche evsaporada
+                            ♦Leche Condensada al gusto
+                                ♦1 Pieza de Canela en rama
+                                ♦1/2 taza de Pasas
+                                                    ♦2 Tazas de Agua"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Ingrediente" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="409dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="1dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+            <TextView
+                android:id="@+id/Pasos"
+                android:layout_width="118dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="299dp"
+                android:text="Procedimiento"
+                android:textColor="@color/subtitulos"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+            <EditText
+                android:id="@+id/preparacion_menu"
+                android:layout_width="351dp"
+                android:layout_height="369dp"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="♦Pon a remojar en agua el arroz y cámbiala varias veces hasta que ya no salga blanquecina el agua.
+                Escurre muy bien el arroz.
+                Hierve las 2 tazas de agua y agrega la canela, cáscara de naranja y arroz.
+                Coce a fuego bajo por 20 minutostapado y sin remover.
+                Agrega la leche condensada al gusto y la leche evaporada.
+                Agrega las pasas.
+                Tapa y hierve por un par de minutos.
+                Apaga y deja enfriar.
+
+                Sirve con canela en polvo."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Ingrediente" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="236dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/iconos"
+                android:progressBackgroundTintMode="screen"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="662dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

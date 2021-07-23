@@ -4,644 +4,874 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:cardCornerRadius="20dp"
+    android:layout_marginBottom="5dp"
 
+    app:cardCornerRadius="20dp"
     app:cardElevation="6dp"
     app:layout_constraintCircleRadius="20dp"
     tools:context=".Inicio">
 
-    <TextView
-        android:id="@+id/textView4"
+
+    <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="60dp"
-        android:text="@string/principal_titulo"
-        android:textAlignment="textStart"
-        android:textColor="@color/titulos"
-        android:textSize="24sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="30dp"
-        android:animateLayoutChanges="true"
-        android:background="@color/fondos"
-        android:orientation="vertical"
-        app:layout_constraintCircleRadius="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
-
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="6dp">
-
-            <ImageView
-                android:id="@+id/iconImageView"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:layout_gravity="center"
-                android:paddingLeft="14dp"
-                android:paddingRight="14dp"
-                app:srcCompat="@drawable/pizza" />
-
-            <LinearLayout
-                android:id="@+id/LinearLayout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="4dp"
-                android:layout_marginLeft="4dp"
-                android:layout_marginTop="2dp"
-                android:layout_toEndOf="@+id/iconImageView"
-                android:layout_toRightOf="@+id/iconImageView"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/receta_nombre"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:text="Lazaña"
-                    android:textColor="@color/titulos"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/receta_pais"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Ecuador"
-                    android:textColor="@color/subtitulos"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/receta_precio"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Geomayra Fajardo "
-                    android:textSize="12dp"
-                    android:textStyle="bold" />
-            </LinearLayout>
+            android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="false"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="6dp"
-                android:text="♥"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <Button
-                android:id="@+id/btn_detalle"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="45dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/btn_detalle"
-                android:text="@string/btn_detalle"
-                android:textAlignment="center"
-                android:textColor="@color/white"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="60dp"
+                android:paddingBottom="10dp"
+                android:text="@string/principal_titulo"
+                android:textAlignment="textStart"
+                android:textColor="@color/titulos"
+                android:textSize="24sp"
                 android:textStyle="bold"
-                app:startIconDrawable="@drawable/user" />
-
-        </RelativeLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="30dp"
-        android:animateLayoutChanges="true"
-        android:background="@color/fondos"
-        android:orientation="vertical"
-        app:layout_constraintCircleRadius="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="6dp">
-
-            <ImageView
-                android:id="@+id/iconImageView"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:layout_gravity="center"
-                android:paddingLeft="14dp"
-                android:paddingRight="14dp"
-                app:srcCompat="@drawable/pizza" />
+                app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <LinearLayout
-                android:id="@+id/LinearLayout"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="4dp"
-                android:layout_marginLeft="4dp"
-                android:layout_marginTop="2dp"
-                android:layout_toEndOf="@+id/iconImageView"
-                android:layout_toRightOf="@+id/iconImageView"
-                android:orientation="vertical">
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="30dp"
+                android:animateLayoutChanges="true"
+                android:background="@color/fondos"
+                android:orientation="vertical"
+                app:layout_constraintCircleRadius="25dp">
 
-                <TextView
-                    android:id="@+id/receta_nombre"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:text="Brownie de Cholate"
-                    android:textColor="@color/titulos"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/receta_pais"
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Ecuador"
-                    android:textColor="@color/subtitulos"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:orientation="horizontal"
+                    android:padding="6dp">
 
-                <TextView
-                    android:id="@+id/receta_precio"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Elizabeth Perez"
-                    android:textSize="12dp"
-                    android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/iconImageView"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        app:srcCompat="@drawable/pizza" />
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toEndOf="@+id/iconImageView"
+                        android:layout_toRightOf="@+id/iconImageView"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/receta_nombre"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="Pizza de Peperoni"
+                            android:textColor="@color/titulos"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/receta_pais"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ecuador"
+                            android:textColor="@color/subtitulos"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/receta_precio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Geomayra Fajardo "
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="false"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="6dp"
+                        android:text="♥"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btn_detalle"
+                        android:onClick="detalle"
+                        android:text="@string/btn_detalle"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:startIconDrawable="@drawable/user" />
+
+                </RelativeLayout>
+
             </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="false"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="6dp"
-                android:text="♥"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <Button
-                android:id="@+id/btn_detalle"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="45dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/btn_detalle"
-                android:text="@string/btn_detalle"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                app:startIconDrawable="@drawable/user" />
-
-        </RelativeLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="30dp"
-        android:animateLayoutChanges="true"
-        android:background="@color/fondos"
-        android:orientation="vertical"
-        app:layout_constraintCircleRadius="25dp"
-        app:layout_constraintDimensionRatio="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="6dp">
-
-            <ImageView
-                android:id="@+id/iconImageView"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:layout_gravity="center"
-                android:paddingLeft="14dp"
-                android:paddingRight="14dp"
-                app:srcCompat="@drawable/pizza" />
 
             <LinearLayout
-                android:id="@+id/LinearLayout"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="4dp"
-                android:layout_marginLeft="4dp"
-                android:layout_marginTop="2dp"
-                android:layout_toEndOf="@+id/iconImageView"
-                android:layout_toRightOf="@+id/iconImageView"
-                android:orientation="vertical">
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="30dp"
+                android:animateLayoutChanges="true"
+                android:background="@color/fondos"
+                android:orientation="vertical"
+                app:layout_constraintCircleRadius="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:text="Arroz con Leche"
-                    android:textColor="@color/titulos"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/receta_pais"
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Ecuador"
-                    android:textColor="@color/subtitulos"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:orientation="horizontal"
+                    android:padding="6dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Jose Lopez"
-                    android:textSize="12dp"
+                    <ImageView
+                        android:id="@+id/iconImageView"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        app:srcCompat="@drawable/pizza" />
 
-                    android:textStyle="bold" />
+                    <LinearLayout
+                        android:id="@+id/LinearLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toEndOf="@+id/iconImageView"
+                        android:layout_toRightOf="@+id/iconImageView"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/receta_nombre"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="Torta Chocolate"
+                            android:textColor="@color/titulos"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/receta_pais"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ecuador"
+                            android:textColor="@color/subtitulos"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/receta_precio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Maria Angelica"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="false"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="6dp"
+                        android:text="♥"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_detalle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btn_detalle"
+                        android:onClick="detalle"
+                        android:text="@string/btn_detalle"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:startIconDrawable="@drawable/user" />
+
+                </RelativeLayout>
+
             </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="false"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="6dp"
-                android:text="♥"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <Button
-                android:id="@+id/btn_detalle"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="45dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/btn_detalle"
-                android:text="@string/btn_detalle"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                app:startIconDrawable="@drawable/user" />
-
-        </RelativeLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="30dp"
-        android:animateLayoutChanges="true"
-        android:background="@color/fondos"
-        android:orientation="vertical"
-        app:layout_constraintCircleRadius="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="6dp">
-
-            <ImageView
-                android:id="@+id/iconImageView"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:layout_gravity="center"
-                android:paddingLeft="14dp"
-                android:paddingRight="14dp"
-                app:srcCompat="@drawable/pizza" />
 
             <LinearLayout
-                android:id="@+id/LinearLayout"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="4dp"
-                android:layout_marginLeft="4dp"
-                android:layout_marginTop="2dp"
-                android:layout_toEndOf="@+id/iconImageView"
-                android:layout_toRightOf="@+id/iconImageView"
-                android:orientation="vertical">
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="30dp"
+                android:animateLayoutChanges="true"
+                android:background="@color/fondos"
+                android:orientation="vertical"
+                app:layout_constraintCircleRadius="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:text="Torta Vainilla"
-                    android:textColor="@color/titulos"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/receta_pais"
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Ecuador"
-                    android:textColor="@color/subtitulos"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:orientation="horizontal"
+                    android:padding="6dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Pedro Escalante"
-                    android:textSize="12dp"
-                    android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/iconImageView"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        app:srcCompat="@drawable/pizza" />
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toEndOf="@+id/iconImageView"
+                        android:layout_toRightOf="@+id/iconImageView"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/receta_nombre"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="Pan de sal"
+                            android:textColor="@color/titulos"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/receta_pais"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ecuador"
+                            android:textColor="@color/subtitulos"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/receta_precio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pedro Freire"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="false"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="6dp"
+                        android:text="♥"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_detalle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btn_detalle"
+                        android:onClick="detalle"
+                        android:text="@string/btn_detalle"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:startIconDrawable="@drawable/user" />
+
+                </RelativeLayout>
+
             </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="false"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="6dp"
-                android:text="♥"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <Button
-                android:id="@+id/btn_detalle"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="45dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/btn_detalle"
-                android:text="@string/btn_detalle"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                app:startIconDrawable="@drawable/user" />
-
-        </RelativeLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="30dp"
-        android:animateLayoutChanges="true"
-        android:background="@color/fondos"
-        android:orientation="vertical"
-        app:layout_constraintCircleRadius="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="6dp">
-
-            <ImageView
-                android:id="@+id/iconImageView"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:layout_gravity="center"
-                android:paddingLeft="14dp"
-                android:paddingRight="14dp"
-                app:srcCompat="@drawable/pizza" />
 
             <LinearLayout
-                android:id="@+id/LinearLayout"
-                android:layout_width="wrap_content"
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="4dp"
-                android:layout_marginLeft="4dp"
-                android:layout_marginTop="2dp"
-                android:layout_toEndOf="@+id/iconImageView"
-                android:layout_toRightOf="@+id/iconImageView"
-                android:orientation="vertical">
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="30dp"
+                android:animateLayoutChanges="true"
+                android:background="@color/fondos"
+                android:orientation="vertical"
+                app:layout_constraintCircleRadius="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:text="Torta Chocolate"
-                    android:textColor="@color/titulos"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/receta_pais"
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Ecuador"
-                    android:textColor="@color/subtitulos"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:orientation="horizontal"
+                    android:padding="6dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Martha Espinoza"
-                    android:textSize="12dp"
-                    android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/iconImageView"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        app:srcCompat="@drawable/pizza" />
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toEndOf="@+id/iconImageView"
+                        android:layout_toRightOf="@+id/iconImageView"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/receta_nombre"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="Brownie de Cholate"
+                            android:textColor="@color/titulos"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/receta_pais"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ecuador"
+                            android:textColor="@color/subtitulos"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/receta_precio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Elizabeth Perez"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="false"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="6dp"
+                        android:text="♥"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_detalle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btn_detalle"
+                        android:onClick="detalle"
+                        android:text="@string/btn_detalle"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:startIconDrawable="@drawable/user" />
+
+                </RelativeLayout>
+
             </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="false"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="6dp"
-                android:text="♥"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <Button
-                android:id="@+id/btn_detalle"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="45dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/btn_detalle"
-                android:text="@string/btn_detalle"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                app:startIconDrawable="@drawable/user" />
-
-        </RelativeLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="30dp"
-        android:animateLayoutChanges="true"
-        android:background="@color/fondos"
-        android:orientation="vertical"
-        app:layout_constraintCircleRadius="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="6dp">
-
-            <ImageView
-                android:id="@+id/iconImageView"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:layout_gravity="center"
-                android:paddingLeft="14dp"
-                android:paddingRight="14dp"
-                app:srcCompat="@drawable/pizza" />
 
             <LinearLayout
-                android:id="@+id/LinearLayout"
-                android:layout_width="wrap_content"
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="4dp"
-                android:layout_marginLeft="4dp"
-                android:layout_marginTop="2dp"
-                android:layout_toEndOf="@+id/iconImageView"
-                android:layout_toRightOf="@+id/iconImageView"
-                android:orientation="vertical">
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="30dp"
+                android:animateLayoutChanges="true"
+                android:background="@color/fondos"
+                android:orientation="vertical"
+                app:layout_constraintCircleRadius="25dp"
+                app:layout_constraintDimensionRatio="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:text="Pizza Jamon"
-                    android:textColor="@color/titulos"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/receta_pais"
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Ecuador"
-                    android:textColor="@color/subtitulos"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:orientation="horizontal"
+                    android:padding="6dp">
 
-                <TextView
-                    android:id="@+id/receta_precio"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Maria Altamirno"
-                    android:textSize="12dp"
-                    android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/iconImageView"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        app:srcCompat="@drawable/pizza" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toEndOf="@+id/iconImageView"
+                        android:layout_toRightOf="@+id/iconImageView"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="Arroz con Leche"
+                            android:textColor="@color/titulos"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/receta_pais"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ecuador"
+                            android:textColor="@color/subtitulos"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jose Lopez"
+                            android:textSize="12dp"
+
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="false"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="6dp"
+                        android:text="♥"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_detalle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btn_detalle"
+                        android:onClick="detalle"
+                        android:text="@string/btn_detalle"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:startIconDrawable="@drawable/user" />
+
+                </RelativeLayout>
+
             </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="false"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="6dp"
-                android:text="♥"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="30dp"
+                android:animateLayoutChanges="true"
+                android:background="@color/fondos"
+                android:orientation="vertical"
+                app:layout_constraintCircleRadius="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
-            <Button
-                android:id="@+id/btn_detalle"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="45dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/btn_detalle"
-                android:text="@string/btn_detalle"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                app:startIconDrawable="@drawable/user" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="6dp">
 
-        </RelativeLayout>
+                    <ImageView
+                        android:id="@+id/iconImageView"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        app:srcCompat="@drawable/pizza" />
 
-    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/LinearLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toEndOf="@+id/iconImageView"
+                        android:layout_toRightOf="@+id/iconImageView"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="Torta Vainilla"
+                            android:textColor="@color/titulos"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/receta_pais"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ecuador"
+                            android:textColor="@color/subtitulos"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pedro Escalante"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="false"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="6dp"
+                        android:text="♥"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_detalle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btn_detalle"
+                        android:onClick="detalle"
+                        android:text="@string/btn_detalle"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:startIconDrawable="@drawable/user" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="30dp"
+                android:animateLayoutChanges="true"
+                android:background="@color/fondos"
+                android:orientation="vertical"
+                app:layout_constraintCircleRadius="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="6dp">
+
+                    <ImageView
+                        android:id="@+id/iconImageView"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        app:srcCompat="@drawable/pizza" />
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toEndOf="@+id/iconImageView"
+                        android:layout_toRightOf="@+id/iconImageView"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="Torta Chocolate"
+                            android:textColor="@color/titulos"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/receta_pais"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ecuador"
+                            android:textColor="@color/subtitulos"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Martha Espinoza"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="false"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="6dp"
+                        android:text="♥"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_detalle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btn_detalle"
+                        android:text="@string/btn_detalle"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:startIconDrawable="@drawable/user" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="30dp"
+                android:animateLayoutChanges="true"
+                android:background="@color/fondos"
+                android:orientation="vertical"
+                app:layout_constraintCircleRadius="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="6dp">
+
+                    <ImageView
+                        android:id="@+id/iconImageView"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        app:srcCompat="@drawable/pizza" />
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toEndOf="@+id/iconImageView"
+                        android:layout_toRightOf="@+id/iconImageView"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="Pan Integral"
+                            android:textColor="@color/titulos"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/receta_pais"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ecuador"
+                            android:textColor="@color/subtitulos"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Estafano Paute"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="false"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="6dp"
+                        android:text="♥"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_detalle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btn_detalle"
+                        android:text="@string/btn_detalle"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:startIconDrawable="@drawable/user" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

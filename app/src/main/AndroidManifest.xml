@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight">
-        <activity android:name=".Inicio"></activity>
+        <activity android:name=".Detalle_receta"></activity>
+        <activity android:name=".Integrantes" />
+        <activity android:name=".Inicio" />
         <activity android:name=".principalActivity" />
         <activity
             android:name=".MainActivity"
